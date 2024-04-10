@@ -2,7 +2,7 @@
 # FROM openjdk:17-oracle
 # VOLUME /tmp
 # ADD target/spring-petclinic-2.1.0.jar app.jar
-# EXPOSE 8080
+# EXPOSE 8081
 FROM openjdk:17-oracle
 VOLUME /tmp
 ADD target/spring-petclinic-2.1.0.jar app.jar
