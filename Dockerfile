@@ -1,10 +1,10 @@
-FROM java:8
-FROM openjdk:17-oracle
-VOLUME /tmp
-ADD target/spring-petclinic-2.1.0.jar app.jar
-EXPOSE 8080
+# FROM java:8
 # FROM openjdk:17-oracle
 # VOLUME /tmp
 # ADD target/spring-petclinic-2.1.0.jar app.jar
 # EXPOSE 8080
-# ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+FROM openjdk:17-oracle
+VOLUME /tmp
+ADD target/spring-petclinic-2.1.0.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
